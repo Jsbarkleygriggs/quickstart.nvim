@@ -14,3 +14,9 @@ end
 require_keymaps_from_dir("path.to.your.directory")
 """
 to seperate the massive keymaps file into reasonable smaller files, organized per their plugin counterparts or individual pluggins
+
+make clear and reset work proper
+
+finish transfering and compering files between versions 
+
+update neorg rebinding fix 
