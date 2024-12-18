@@ -46,6 +46,8 @@ return {
 
     -- Setup Python debugging
     require('dap-python').setup()
+    -- Setup bindings
+    require('config.binds.debug')
   end,
 }
 

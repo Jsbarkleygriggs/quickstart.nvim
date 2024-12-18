@@ -57,3 +57,16 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Indentation
+vim.opt.shiftwidth = 4    -- Sets indent size to 4 spaces
+vim.opt.tabstop = 4       -- Sets tab size to 4 spaces
+vim.opt.expandtab = true  -- Converts tabs to spaces
+
+-- Line wrapping
+vim.opt.wrap = false
+
+-- Config Syntax Highlighting
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+    pattern = {"*/i3/*.conf"},
+    command = "set filetype=i3config"
+})

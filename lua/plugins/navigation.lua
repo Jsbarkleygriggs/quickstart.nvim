@@ -1,4 +1,5 @@
 return {
+
   {
     'nanotee/zoxide.vim',
     -- would change Z to be cd, unfortunatly, it will always be capitalized first letter
@@ -41,7 +42,11 @@ return {
       pcall(require('telescope').load_extension, 'ui-select')
 
       -- See `:help telescope.builtin`
+
+      -- Enable telescope spesific keybindings
+      require("config.binds.telescope")
     end,
+
   },
 
   { -- File Navigator
@@ -57,6 +62,6 @@ return {
         vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
       }
     end,
-  }
+  },
 
 }
